@@ -74,8 +74,8 @@ app.use('/api/auth', authRoutes);
 
 
  
-
 //in index.js make sure prot point to process .env port
-app.listen(5000, () => {
-  console.log('Server started');
+let port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log('server started');
 });
