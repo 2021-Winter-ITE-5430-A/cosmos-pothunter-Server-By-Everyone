@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "bc85841e-16d6-4241-9b49-21f4a8aeca88",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "toolkit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA2MmI1YzZjOGEyOWYzOTE0M2RiYzkxIiwibmFtZSI6IkxvdmVsZWVuIn0sImlhdCI6MTYxNzIxOTY4MSwiZXhwIjoxNjE3MjIzMjgxfQ.nL432V4JUgZ_m9hHLJMnsnAEyUBkIks-aNG9QZGw3xoeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA2MmI1YzZjOGEyOWYzOTE0M2RiYzkxIiwibmFtZSI6IkxvdmVsZWVuIn0sImlhdCI6MTYxNzIxOTY4MSwiZXhwIjoxNjE3MjIzMjgxfQ.nL432V4JUgZ_m9hHLJMnsnAEyUBkIks-aNG9QZGw3xo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n{\n    \"name\": \"Introduction to react JS\",\n    \"webPreviewUrl\": \"https://www.youtube.com/watch?v=dpw9EHDh2bM&feature=emb_title\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/toolkit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"toolkit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post QnA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTY3NjYyNjIsImV4cCI6MTYxNjc2OTg2Mn0.j8rMbK4C6KxFFLUeBFVSEm8VoHzCxIUx7aS2LFXFCJE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"question\":\"How did you get to where you are today?\",\r\n   \"answer\":\"Hard work and seeing all obstacles as an opporunity yo improve my self\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/qa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update QnA",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTY3NjYyNjIsImV4cCI6MTYxNjc2OTg2Mn0.j8rMbK4C6KxFFLUeBFVSEm8VoHzCxIUx7aS2LFXFCJE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"605df155d5f4140b30a66486\",\r\n        \"user\": \"605de5363617d23358160c6e\",\r\n        \"question\": \"Where do you see my strengths?\",\r\n        \"answer\": \"Your strengths lies in your soft skills such as Enthusiasm, trustworthiness and creativity\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/qa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list QnA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTY3NjYyNjIsImV4cCI6MTYxNjc2OTg2Mn0.j8rMbK4C6KxFFLUeBFVSEm8VoHzCxIUx7aS2LFXFCJE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/qa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete QnA",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTY3NjYyNjIsImV4cCI6MTYxNjc2OTg2Mn0.j8rMbK4C6KxFFLUeBFVSEm8VoHzCxIUx7aS2LFXFCJE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"605df155d5f4140b30a66486\"\r\n        \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/qa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Faqs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA2MmI1YzZjOGEyOWYzOTE0M2RiYzkxIiwibmFtZSI6IkxvdmVsZWVuIn0sImlhdCI6MTYxNzIxOTY4MSwiZXhwIjoxNjE3MjIzMjgxfQ.nL432V4JUgZ_m9hHLJMnsnAEyUBkIks-aNG9QZGw3xoeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA2MmI1YzZjOGEyOWYzOTE0M2RiYzkxIiwibmFtZSI6IkxvdmVsZWVuIn0sImlhdCI6MTYxNzIxOTY4MSwiZXhwIjoxNjE3MjIzMjgxfQ.nL432V4JUgZ_m9hHLJMnsnAEyUBkIks-aNG9QZGw3xo",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quesId\": 10,\n    \"question\": \"10. What are your weaknesses?\",\n    \"answer\": \"Sharing your weaknesses shows that you are self-aware. Be honest about how you have worked through challenging experiences. If possible, include how you've improved on these over time.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/faqs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"faqs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resume",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA2MmI1YzZjOGEyOWYzOTE0M2RiYzkxIiwibmFtZSI6IkxvdmVsZWVuIn0sImlhdCI6MTYxNzIxOTY4MSwiZXhwIjoxNjE3MjIzMjgxfQ.nL432V4JUgZ_m9hHLJMnsnAEyUBkIks-aNG9QZGw3xoeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA2MmI1YzZjOGEyOWYzOTE0M2RiYzkxIiwibmFtZSI6IkxvdmVsZWVuIn0sImlhdCI6MTYxNzIxOTY4MSwiZXhwIjoxNjE3MjIzMjgxfQ.nL432V4JUgZ_m9hHLJMnsnAEyUBkIks-aNG9QZGw3xo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image\": \"https://binaries.templates.cdn.office.net/support/templates/en-us/lt16392716_quantized.png\",\n    \"title\": \"Resume 3\",\n    \"ref\":\"https://binaries.templates.cdn.office.net/support/templates/en-us/tf16392716_win32.dotx\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/resume/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"resume",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\":\"Shelcy\",\r\n \"email\":\"shelcy@gmail.com\",\r\n \"password\":\"12345\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Word Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Action Words",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Action Words",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"term\":\"Developed\",\r\n\"sentence\":\"Developed Software Solutions\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/words",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"words"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Action Words",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/words",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"words"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update list",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/books/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add forms",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA3MjNlZjY5MzZiOTI1Zjc4ZTM1ODlkIiwibmFtZSI6IkpvaG4ifSwiaWF0IjoxNjE4NTQwMDIwLCJleHAiOjE2MTg1NDM2MjB9.6CVzyGWIXRuOtyNCo9MDGbzq2Noell-t06pYOOCaAIo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"Meriya\",\r\n\"email\":\"merya@gmail.com\",\r\n\"addr1\": \"211 Holy Drive\",\r\n\"addr2\":\"Oakmeadow Street Road\",\r\n\"city\":\"Hamilton\",\r\n\"state\":\"ON\",\r\n\"zip\":\"L7A 4Y2\",\r\n\"phn\":\"+1 438 222 4444\",\r\n\"edu\":\"Bachelors\",\r\n\"field\":\"Embedded Syatems\",\r\n\"gpa\":\"3.8\",\r\n\"clg\":\"Guelph Humber University\",\r\n\"edu2\":\"Diploma\",\r\n\"field2\":\"Electronics\",\r\n\"gpa2\":\"2.7\",\r\n\"clg2\":\"CUSAT\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/formnew",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"formnew"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forms",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": \"6071b47702b15854c8202840\"\r\n    }"
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"jobid\":\"112303\",\r\n\"title\":\"Developed Software Solutions\",\r\n\"location\":\"\",\r\n\"ref\":\"https://boards.greenhouse.io/appnovation/jobs/4646500002?s=LinkedIn&source=LinkedIn\",\r\n\"jd\":\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/jobs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jobs from database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mentees Question",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTg2MTc3MjMsImV4cCI6MTYxODYyMTMyM30.IJzJuzm4ctQ_KqAvA04lvgP6izSPU43fn8M4TF5DTEo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"email\":\"test@gmail.com\",\"website\":\"\",\"question\":\"test\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/menteesQuestion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"menteesQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mentees Question",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTg2MTc3MjMsImV4cCI6MTYxODYyMTMyM30.IJzJuzm4ctQ_KqAvA04lvgP6izSPU43fn8M4TF5DTEo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/menteesQuestion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"menteesQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mentors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTg2MTc3MjMsImV4cCI6MTYxODYyMTMyM30.IJzJuzm4ctQ_KqAvA04lvgP6izSPU43fn8M4TF5DTEo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mentors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add mentor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA1ZGU1MzYzNjE3ZDIzMzU4MTYwYzZlIiwibmFtZSI6Im1hcnkyMCJ9LCJpYXQiOjE2MTg2MTc3MjMsImV4cCI6MTYxODYyMTMyM30.IJzJuzm4ctQ_KqAvA04lvgP6izSPU43fn8M4TF5DTEo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mary Erhabor\",\r\n    \"imageUrl\":\"https://media-exp1.licdn.com/dms/image/C4E03AQEsLOkS529g-g/profile-displayphoto-shrink_800_800/0/1618353087838?e=1623888000&v=beta&t=9AjSlHK3FzDWjQPYC3GITqy_hGqA8OvSQd03aeVMvcc\",\r\n    \"details\":\"Data Analyst\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mentors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
