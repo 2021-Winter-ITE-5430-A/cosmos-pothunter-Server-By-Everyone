@@ -1,4 +1,5 @@
 # Project Name : PotHunter 
+# (Team Lead) - Ismaila Afuwape
 
 # Hosted client URL: https://pothunter-client-by-everyone.herokuapp.com/
 
